@@ -11,6 +11,6 @@ module.exports={
     .setDescription(`🏓🏓🏓\nLatency is ${Math.floor(msg.createdTimestamp - message.createdTimestamp)}MS\nAPI Latency is ${Math.round(bot.ws.ping)}MS\n🏓🏓🏓`)
     .setColor('RANDOM')
     msg.edit(Embed)
-    }
+    }//
 }
 // test
