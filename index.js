@@ -8,6 +8,7 @@ const token = config.token;
 bot.commands = new Collection();
 bot.aliases = new Collection();
 bot.categories = fs.readdirSync("./commands/");
+bot.prefix = config.prefix;
 ["command","event"].forEach(handler=>{
     require(`./handlers/${handler}`)(bot);
 });
