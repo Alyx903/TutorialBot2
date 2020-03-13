@@ -4,6 +4,7 @@ module.exports={
     category: 'fun',
     timeout: 5000,
     description: 'View a nice embed!',
+    aliases: ["e"],
     run: async(bot,message,args)=>{
         const embed = new MessageEmbed()
             .setTitle('Title ')

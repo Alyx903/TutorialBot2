@@ -3,6 +3,8 @@ module.exports={
     name: 'poll',
     description: 'Create a simple yes or no poll.',
     category: 'fun',
+    usage: '<poll question>',
+    aliases: ['p'],
     run: async(bot,message,args)=>{
         if(!message.member.permissions.has("ADMINISTRATOR")) return message.channel.send('You do not have admin!')
         //!poll <channel mention> question
